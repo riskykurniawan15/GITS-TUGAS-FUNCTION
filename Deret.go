@@ -40,6 +40,9 @@ func runDeret(n int, jml int, awal int, kelipatan int, sum int, temp string) str
 }
 
 func getDeret(jml int, awal int, kelipatan int) string {
+	if jml <= 0 {
+		return "0 = 0"
+	}
 	var deret string = runDeret(1, jml, awal, kelipatan, awal, "")
 	result := strings.Split(deret, " = ")
 	return result[1] + " = " + result[0]
@@ -66,6 +69,9 @@ func runDeret_z(n int, jml int, awal int, kelipatan int, sum int, zero string, t
 }
 
 func getDeret_z(jml int, awal int, kelipatan int) string {	
+	if jml <= 0 {
+		return "0 = 0"
+	}
 	var deret string = runDeret_z(1, jml, awal, kelipatan, 0, "", "")
 	result := strings.Split(deret, " = ")
 	return result[1] + " = " + result[0]
