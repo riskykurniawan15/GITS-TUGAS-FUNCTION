@@ -14,11 +14,7 @@ var PRICE_CS = map[int]int{}
 func main(){
 	// Risky Kurniawan - ARS University
 	MenuUtama:
-	var menu, submenu string
-	// g. Menampilkan seluruh data customer yang menyewa komputer
-	// kurang dari rata – rata.
-	// h. Sertakan message validasi required dalam bentuk function multiple
-	// value
+	var menu, submenu strings
 	fmt.Println("==========================================")
 	fmt.Println("          APLIKASI WARNET")
 	fmt.Println("==========================================")
