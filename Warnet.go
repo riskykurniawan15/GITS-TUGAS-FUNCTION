@@ -23,7 +23,7 @@ func main(){
 	fmt.Println("2. Input Data")
 	fmt.Println("3. Hapus Data")
 	fmt.Println("4. Rata - Rata Jumlah Jam Customers")
-	fmt.Println("5. Jam penggunaa paling sedikit (3 Down)")
+	fmt.Println("5. Jam penggunaan paling sedikit (3 Down)")
 	fmt.Println("6. Pengguna dibawah jam rata - rata")
 	fmt.Println("0. Keluar Aplikasi")
 	fmt.Println("==========================================")
