@@ -33,6 +33,7 @@ func getDeret_z(jml int, awal int, kelipatan int) string {
 }
 
 func main() {
+	// Risky Kurniawan - ARS University
 	var jml int
 	fmt.Println("===========================================")
 	fmt.Println("             DERET REKURSIF")
