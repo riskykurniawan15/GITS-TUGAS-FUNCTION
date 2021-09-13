@@ -27,7 +27,7 @@ func main(){
 	fmt.Println("0. Keluar Aplikasi")
 	fmt.Println("==========================================")
 	fmt.Print("Pilihan anda adalah : ")
-	fmt.Scan(&menu)
+	fmt.Scanf("%s\n", &menu)
 	fmt.Println()
 
 	Pil:
@@ -59,7 +59,7 @@ func main(){
 		fmt.Println("9. Kembali ke menu")
 		fmt.Println("0. Keluar Aplikasi")
 		fmt.Print("Pilihan anda adalah : ")
-		fmt.Scan(&submenu)
+		fmt.Scanf("%s\n", &submenu)
 
 		if submenu == "9" {
 			goto MenuUtama
@@ -116,18 +116,18 @@ func SelectData(){
 }
 
 func InputData(){
-	var title, name string
+	var title, name string = "",""
 	var notif, err string = "",""
 	var vote int
 	fmt.Println("==========================================")
 	fmt.Println("      INPUT DATA VOTING PENYANYI")
 	fmt.Println("==========================================")	
 	fmt.Print("Masukan Judul Lagu    : ")
-	fmt.Scan(&title)
+	fmt.Scanf("%s\n", &title)
 	fmt.Print("Masukan Nama Penyanyi : ")
-	fmt.Scan(&name)
+	fmt.Scanf("%s\n", &name)
 	fmt.Print("Masukan Jumlah Vote   : ")
-	fmt.Scan(&vote)
+	fmt.Scanf("%d\n", &vote)
 	fmt.Println("==========================================")	
 
 	_ , err = validation(title, "title")
@@ -165,7 +165,7 @@ func DeleteData() {
 	fmt.Println("      HAPUS DATA VOTING PENYANYI")
 	fmt.Println("==========================================")
 	fmt.Print("Masukan ID Data : ")
-	fmt.Scan(&id)
+	fmt.Scanf("%d\n", &id)
 	fmt.Println("==========================================")
 	if TITLE_SINGER[id] != "" {
 		delete(TITLE_SINGER, id)

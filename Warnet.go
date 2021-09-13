@@ -28,7 +28,7 @@ func main(){
 	fmt.Println("0. Keluar Aplikasi")
 	fmt.Println("==========================================")
 	fmt.Print("Pilihan anda adalah : ")
-	fmt.Scan(&menu)
+	fmt.Scanf("%s\n", &menu)
 	fmt.Println()
 
 	Pil:
@@ -62,7 +62,7 @@ func main(){
 		fmt.Println("9. Kembali ke menu")
 		fmt.Println("0. Keluar Aplikasi")
 		fmt.Print("Pilihan anda adalah : ")
-		fmt.Scan(&submenu)
+		fmt.Scanf("%s\n", &submenu)
 
 		if submenu == "9" {
 			goto MenuUtama
@@ -124,15 +124,15 @@ func InputData(){
 	ID_input:
 	fmt.Println("==========================================")	
 	fmt.Print("Masukan Kode ID (number) : ")
-	fmt.Scan(&ID)
+	fmt.Scanf("%d\n", &ID)
 	if NAME_CS[ID] != "" {
 		fmt.Println("Kode ID telah digunakan silahkan input kembali")
 		goto ID_input
 	}
 	fmt.Print("Masukan Nama Pelanggan   : ")
-	fmt.Scan(&name)
+	fmt.Scanf("%s\n", &name)
 	fmt.Print("Masukan Jumlah Jam       : ")
-	fmt.Scan(&hours)
+	fmt.Scanf("%d\n", &hours)
 	fmt.Println("==========================================")	
 
 	_ , err = validation(name, "name")
@@ -167,7 +167,7 @@ func DeleteData() {
 	fmt.Println("               HAPUS DATA")
 	fmt.Println("==========================================")
 	fmt.Print("Masukan ID Data : ")
-	fmt.Scan(&id)
+	fmt.Scanf("%d\n", &id)
 	fmt.Println("==========================================")
 	if NAME_CS[id] != "" {
 		delete(NAME_CS, id)
